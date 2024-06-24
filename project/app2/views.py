@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("welcome to my contact page........v3")
+    return HttpResponse("welcome to my contact page...........v3")
