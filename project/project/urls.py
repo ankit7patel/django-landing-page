@@ -21,7 +21,11 @@ from project import views
 from app import views as v1
 from app1 import views as v2
 from app2 import views as v3
-
+from pay.views import pay
+from about.views import about 
+from sell.views import sell
+from status.views import status
+from calls.views import calls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +33,11 @@ urlpatterns = [
     path('home/',views.index,name="index") ,  ##defult admin
     path('home1/',v1.index,name="index1"),
     path('home2/',v2.index,name="index2"),
-    path('home3/',v3.index,name="index3") ,
+    path('home3/',v3.index,name="index3"),
+    path('pay/',pay),
+    path('about/',about),
+    path('sell/',sell),
+    path('status/',status),
+    path('calls/',calls)
 ]
 
